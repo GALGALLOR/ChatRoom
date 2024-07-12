@@ -3,7 +3,7 @@ from flask_socketio import SocketIO,send
 
 app=Flask(__name__)
 
-app.config['SECRET'] = 'secret123'
+app.config['SECRET'] = ''
 socketio = SocketIO(app,cars_allowed_origins='*')
 
 @socketio.on('message')
